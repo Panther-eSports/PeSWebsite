@@ -2,118 +2,122 @@
 <html>
 <head>
 	<title>Page Title</title>
-	<style>
+		<style>
+			body {
+				background: purple;
+				font-size: 100%;
+			}
 
-    body {
-      background: purple;
-      font-size: 100%;
-    }
+		   	.red li {
+		     		 background: red;
+			}
 
-    .red li {
-      background: red;
-    }
+		    	.gold li {
+		      		background: gold;
+		    	}
 
-    .gold li {
-      background: gold;
-    }
+		    	.flex-group {
+		      		margin: auto;
+		      		display: flex;
+		      		flex-flow: column;
+		      		justify-content: space-around;
+		    	}
 
-    .flex-group {
-      margin: auto;
-      display: flex;
-      flex-flow: column;
-      justify-content: space-around;
-    }
+		    .flex-header {
+		      margin: 1%;
 
-    .flex-header {
-      margin: 1%;
+		      display: flex;
+		      flex-flow: row;
+		      justify-content: space-around;
+		    }
 
-      display: flex;
-      flex-flow: row;
-      justify-content: space-around;
-    }
+		    .flex-body {
+		      margin: 1%;
 
-    .flex-body {
-      margin: 1%;
+		      display: flex;
+		      flex-flow: row;
+		      justify-content: space-around;
 
-      display: flex;
-      flex-flow: row;
-      justify-content: space-around;
+		      height: 1000px;
+		    }
 
-      height: 1000px;
-    }
+		    .flex-container-left {
+		      flex: 3 4;
+		      display: flex;
+		      flex-flow: column;
+		      align-items: space-around;
+		      align-content: flex-start;
+		      padding: 0;
+		      margin: 0;
+		      list-style: none;
+		      border: 1px solid green;
+		    }
 
-    .flex-container-left {
-      flex: 3 4;
-      display: flex;
-      flex-flow: column;
-      align-items: space-around;
-      align-content: flex-start;
-      padding: 0;
-      margin: 0;
-      list-style: none;
-      border: 1px solid green;
-    }
+		    .flex-container-right {
+		      flex: 1 4;
+		      display: flex;
+		      flex-flow: column;
+		      align-items: space-around;
+		      align-content: flex-start;
+		      padding: 0;
+		      margin: 0;
+		      list-style: none;
+		      border: 1px solid black;
+		    }
 
-    .flex-container-right {
-      flex: 1 4;
-      display: flex;
-      flex-flow: column;
-      align-items: space-around;
-      align-content: flex-start;
-      padding: 0;
-      margin: 0;
-      list-style: none;
-      border: 1px solid black;
-    }
+		    .flex-item {
+		      flex: 1 1 auto;
+		      padding: 5px;
+		      margin: 10px;
+		      line-height: 100px;
+		      color: black;
+		      font-weight: bold;
+		      font-size: 2em;
+		      text-align: center;
+		    }
 
-    .flex-item {
-      flex: 1 1 auto;
-      padding: 5px;
-      margin: 10px;
-      line-height: 100px;
-      color: black;
-      font-weight: bold;
-      font-size: 2em;
-      text-align: center;
-    }
+		    .header {
+		      display: flex;
+		      flex: 3 7;
 
-    .header {
-      display: flex;
-      flex: 3 7;
+		      background-color: white;
+		      height: 100px;
+		      margin-top: 5%;
 
-      background-color: white;
-      height: 100px;
-      margin-top: 5%;
+		      border: 1px solid black;
+		    }
 
-      border: 1px solid black;
-    }
+		    .nav {
+		      display: flex;
+		      flex: 4 7;
 
-    .nav {
-      display: flex;
-      flex: 4 7;
+		      background-color: white;
+		      height: 100px;
+		      margin-top: 5%;
 
-      background-color: white;
-      height: 100px;
-      margin-top: 5%;
+		      border: 1px solid black;
+		    }
 
-      border: 1px solid black;
-    }
+		    	.footer {
+		      		background-color: white;
+		      		width: 100%;
+		      		height: 100px;
+		      		margin-bottom: 3%;
 
-    .footer {
-      background-color: white;
-      width: 100%;
-      height: 100px;
-      margin-bottom: 3%;
+		      		border: 1px solid black;
+		    	}
 
-      border: 1px solid black;
-    }
+			h1 {
+      				margin: auto;
 
-    h1 {
-      margin: auto;
-
-      font-size: 3em;
-      font-family: Georgia, Times, serif;
-    }
+      				font-size: 3em;
+      				font-family: Georgia, Times, serif;
+    			}
+			
+    			p.navigation {
+  				margin: auto;
+  				word-spacing: 3em;
+			}
 
 	</style>
 </head>
@@ -126,7 +130,9 @@
         <h1>Welcome to Panther eSports</h1>
       </header>
       <nav class="nav">
-        Navigation
+	<p class="navigation">
+      	  Home About-Us Calendar Updates Contact-Us
+      	</p>
       </nav>
     </div>
 
